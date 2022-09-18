@@ -41,6 +41,10 @@
   right: 35px;
   top: 60px;
 }
+.button {
+
+  border-radius: 0px;
+}
 #section-a {
 
   margin-top: 7rem;
