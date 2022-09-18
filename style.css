@@ -139,6 +139,7 @@ input::placeholder {
   background-color: var(--VeryDarkViolet);
   height: 2.5rem;
   color: var(--White);
+  border-radius: 3px;
 }
 .active{
   color: var(--errorColor);
