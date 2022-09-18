@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor Challenge || Interactive card details form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="(max-width: 1024px)" href="mobile.css" />
+  </head>
+  <body>
+    <main id="main">
+      <!-- ---- FRONT AND BACK OF CARD  && THEIR DETAILS ---- -->
+      <div id="section-a">
+        <div class="card card-1">
+          <img src="./images/card-logo.svg" alt="" />
+          <p class="num card-num">0000 0000 0000 0000</p>
+          <div class="n-d">
+            <p class="name card-name">CLINTON JOY FIMIE</p>
+            <p class="date card-exp">03/06</p>
+          </div>
+        </div>
+        <div class="card card-2">
+          <p class="zero card-cvc">000</p>
+        </div>
+      </div>
+
+      <!-- ---- FORM AND FORM DETAILS ---- -->
+      <div id="section-b">
+        <form action="" class="">
+          <div class="field c-name">
+            <label for="name" class="input-text"> CARDHOLDER NAME</label>
+            <input class="cardHolderName"
+              type=""
+              placeholder="e.g. clinton approved"
+              name="name"
+            />
+            <p class=" error error-CN"></p>
+          </div>
+          <div class="field c-number">
+            <label for="number" class="input-text"> CARD NUMBER</label>
+            <input
+              class="cardNumber"
+              type="number"
+              placeholder="e.g. 1234 5400 5343 2222"
+              name="name"
+            />
+             <p class=" error error-N"></p>
+          </div>
+          <div class="field c-date">
+            <div class="date-info">
+              <div class="exp-date">
+                <label for="expiry" class="input-text">
+                  EXP. DATE [ MM/YY]
+                </label>
+                <input  class="mm" type="number" placeholder="MM" name="expiry" />
+                <input  class="yy" type="number" placeholder="YY" name="expiry" />
+                 <p class="error error-MY"></p>
+              </div>
+              <div class="cvc">
+                <label for="eve"> CVC</label>
+                <input  class="CVC" type="number" placeholder="e.g. 123" name="cvc" />
+                 <p class="error error-CVC"></p>
+              </div>
+            </div>
+          </div>
+          <input type="button" class="button" value="Confirm" />
+        </form>
+      </div>
+
+      <!-- ---- THANK YOU FOR SUBMITTING ---- -->
+      <div id="section-c" class="hidden">
+        <img src="./images/icon-complete.svg" alt="" />
+        <p class="thank">THANK YOU!</p>
+        <p class="text">We've added your card details</p>
+        <input type="button" class="button" value="Confirm" />
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

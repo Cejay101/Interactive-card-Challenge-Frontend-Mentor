@@ -1,0 +1,177 @@
+/* ---- DEFAULT SETTINGS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ---- VARIABLE ---- */
+:root {
+    --White : hsl(0, 0%, 100%);
+    --LightGrayishViolet : hsl(279, 6%, 55%);
+    --VeryDarkViolet : hsl(278, 68%, 11%);
+    --errorColor : hsl(0, 100%, 66%);
+}
+/* ---- BODY ---- */
+body {
+  background-color: var(--White);
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 1000;
+}
+/* ---- BACKGROUND IMAGE ---- */
+#main {  background: url(".//images/bg-main-desktop.png") no-repeat ;
+  height: 100vh;
+  width:  100%;  
+  display: flex; 
+}
+/* ---- CARDS ---- */
+.card {
+  line-height: 2rem;
+  color: var(--VeryDarkViolet);
+}
+
+
+/* ---- CARD 1 ---- */
+.card-1 {
+  position: absolute;
+  top: 10rem;
+  left: 10rem;
+  display: flex;
+  padding: 1.5rem;
+  flex-direction: column;
+  background: url(./images/bg-card-front.png) no-repeat;
+  height: 205px;
+  width: 375px;
+  color: var(--White);
+}
+/* ---- CARD 2 ---- */
+.card-2 {
+  background: url(./images/bg-card-back.png) no-repeat;
+  position: absolute;
+  top: 25rem;
+  left: 15rem;
+  height: 205px;
+  width: 375px;
+  color: var(--White);
+}
+
+/* ---- CARD CONTENTS ---- */
+img {
+  height: 2.3rem;
+  width: 4.3rem;
+}
+.n-d {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+}
+.num {
+  position: absolute;
+  top: 120px;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+.name {
+  position: absolute;
+  bottom: 15px;
+}
+.date {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+.zero {
+  font-size: 10px;
+  position: absolute;
+  right: 38px;
+  top: 82px;
+}
+
+/* ---- FORM ---- */
+form {
+  position: absolute;
+  top: 14rem;
+  left: 48rem;
+  width: 23rem;
+  line-height: 0.9rem;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+.field {
+  margin-bottom: 0.5rem;
+}
+label {
+  line-height: 1.4rem;
+}
+input {
+  height: 2.5rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  padding-left: 5px;
+  border: solid var(--LightGrayishViolet) 1.5px;
+  font-family: "Space Grotesk", sans-serif;
+}
+input::placeholder {
+  color: var(--LightGrayishViolet);
+  padding-left: 10px;
+  font-size: 14px;
+  font-family: "Space Grotesk", sans-serif;
+}
+.input-text {
+  display: block;
+}
+.date-info {
+  display: flex;
+  justify-content: space-between;
+}
+.exp-date input {
+  width: 5rem;
+}
+.cvc {
+  display: flex;
+  flex-direction: column;
+}
+.cvc input {
+  width: auto;
+}
+.button {
+  margin-top: 0.5rem;
+  background-color: var(--VeryDarkViolet);
+  height: 2.5rem;
+  color: var(--White);
+}
+.active{
+  color: var(--errorColor);
+  font-size: 9px;
+}
+.error{ 
+  color: red;
+}
+/* ---- THANK YOU FOR SUBMITING ---- */
+#section-c {
+  text-align: center;
+  position: absolute;
+  top: 20rem;
+  left: 48rem;
+  width: 23rem;
+  
+  line-height: 2rem;
+  color: var(--VeryDarkViolet);
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+#section-c img {
+  height: 4rem;
+  width: 4rem;
+}
+#section-c .thank {
+  font-size: 1.5rem;
+  /* font-weight: 1000; */
+}
+#section-c .text {
+  font-size: 0.8rem;
+  color: var(--LightGrayishViolet);
+}
+.hidden {
+  display: none;
+}
