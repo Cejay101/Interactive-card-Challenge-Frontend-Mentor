@@ -71,10 +71,13 @@ img {
   letter-spacing: 2px;
 }
 .name {
+  
   position: absolute;
   bottom: 15px;
 }
 .date {
+  display: flex;
+  flex-direction: row;
   position: absolute;
   bottom: 15px;
   right: 25px;
@@ -140,6 +143,10 @@ input::placeholder {
   height: 2.5rem;
   color: var(--White);
   border-radius: 3px;
+}
+.button:hover{
+  background-color: var(--LightGrayishViolet);
+  cursor: pointer;
 }
 .active{
   color: var(--errorColor);

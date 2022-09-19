@@ -23,7 +23,10 @@
           <p class="num card-num">0000 0000 0000 0000</p>
           <div class="n-d">
             <p class="name card-name">CLINTON JOY FIMIE</p>
-            <p class="date card-exp">03/06</p>
+            <div class="date">
+              <p class="m-y card-exp">06</p>
+              <p class="m-y card-exp1">/2003</p>
+            </div>
           </div>
         </div>
         <div class="card card-2">
@@ -38,8 +41,9 @@
             <label for="name" class="input-text"> CARDHOLDER NAME</label>
             <input class="cardHolderName"
               type=""
-              placeholder="e.g. clinton approved"
+              placeholder="CLINTON JOY FIMIE"
               name="name"
+              oninput="inputName()"
             />
             <p class=" error error-CN"></p>
           </div>
@@ -47,9 +51,10 @@
             <label for="number" class="input-text"> CARD NUMBER</label>
             <input
               class="cardNumber"
-              type="number"
-              placeholder="e.g. 1234 5400 5343 2222"
-              name="name"
+              type="text"
+              placeholder="1234 5400 5343 2222"
+              name="cardNumber"
+               oninput="inputCardNum()"
             />
              <p class=" error error-N"></p>
           </div>
@@ -59,18 +64,18 @@
                 <label for="expiry" class="input-text">
                   EXP. DATE [ MM/YY]
                 </label>
-                <input  class="mm" type="number" placeholder="MM" name="expiry" />
-                <input  class="yy" type="number" placeholder="YY" name="expiry" />
-                 <p class="error error-MY"></p>
+                  <input  class="expiry mm" type="text" placeholder="MM" name="expiry" oninput="inputMM()"/>
+                  <input  class="expiry yy" type="text" placeholder="YY" name="expiry" oninput="inputYY()" />
+                  <p class="error error-MY"></p>
               </div>
               <div class="cvc">
-                <label for="eve"> CVC</label>
-                <input  class="CVC" type="number" placeholder="e.g. 123" name="cvc" />
+                <label for="CVC"> CVC</label>
+                <input  class="CVC" type="text" placeholder="e.g. 123" name="cvc" oninput="inputCvc()" />
                  <p class="error error-CVC"></p>
               </div>
             </div>
           </div>
-          <input type="button" class="button" value="Confirm" />
+          <input type="button" class="button button-submit" value="Confirm" />
         </form>
       </div>
 
@@ -79,7 +84,7 @@
         <img src="./images/icon-complete.svg" alt="" />
         <p class="thank">THANK YOU!</p>
         <p class="text">We've added your card details</p>
-        <input type="button" class="button" value="Confirm" />
+        <input type="button" class="button button-continue" value="Continue" />
       </div>
     </main>
     <script src="./script.js"></script>
